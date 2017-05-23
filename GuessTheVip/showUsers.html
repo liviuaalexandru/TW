@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+img {
+    width: 100%;
+    height: auto;
+}
+.example {
+    display: flex;
+    transition: all .5s;
+    user-select: none;
+    background: linear-gradient(to bottom, white, black);
+}
+*{
+    box-sizing: border-box;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+.header {
+    background-color: #9933cc;
+    color: #ffffff;
+    padding: 15px;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #33b5e5;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.menu li:hover {
+    background-color: #0099cc;
+}
+.aside {
+    background-color: #33b5e5;
+    padding: 15px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.footer {
+    background-color: #0099cc;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+}
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+  body{
+    background-color: #004d4d;
+  }
+
+  a[type="DeleteUser"] {
+      background-color: #009900;
+      border: none;
+      color: #ffb84d;
+      padding: 10px 10px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 10px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 70px;
+  }
+  a[type="Home"] {
+      background-color: #ffb84d;
+      border: none;
+      color: black;
+      padding: 15px 27px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 30px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 70px;
+      position: absolute;
+      left:45%;
+      top:7%;
+  }
+
+  showUsers{
+    position: absolute;
+    top:20%;
+    left:35%;
+  }
+
+  #test {
+  width:100%;
+  height:100%;
+  }
+
+  table {
+    font-family: arial;
+    border-collapse: collapse;
+    width: 70%;
+    position: absolute;
+    top:35%;
+    left:20%;
+    border-color:#004d4d;
+    background-color: #004d4d;
+
+  }
+  td, th {
+    border: 1px solid #004d4d;
+    text-align: left;
+    padding: 8px;
+  }
+  tr:nth-child(even) {
+    background-color: #004d4d;
+  }
+</style>
+</head>
+
+<body>
+
+  <a href="/GuessTheVip/AdminHome.html" type="Home">Home</a>
+  <font color="#ffb84d"><showUsers><h1>User registred for this game</h1></showUsers>
+  <table>
+    <tr>
+        <th>Username</th>
+        <th>Password</th>
+        <th>Highscore</th>
+        <th>Action</th>
+    </tr>
+    <tr>
+        <td>Account1</td>
+        <td>Password1</td>
+        <td><center> 9</center></td>
+        <td>
+            <a href="/GuessTheVip/showUsers.html" type="DeleteUser">Delete User</a>
+        </td>
+    </tr>
+    <tr>
+        <td>Account2</td>
+        <td>Password2</td>
+        <td> <center> 7</center></td>
+        <td>
+          <a href="/GuessTheVip/showUsers.html" type="DeleteUser">Delete User</a>
+   </tr>
+   <tr>
+       <td>Account3</td>
+       <td>Password3</td>
+       <td> <center> 20</center></td>
+       <td>
+         <a href="/GuessTheVip/showUsers.html" type="DeleteUser">Delete User</a>
+  </tr>
+  <tr>
+      <td>Account4</td>
+      <td>Password</td>
+      <td> <center> 30</center></td>
+      <td>
+        <a href="/GuessTheVip/showUsers.html" type="DeleteUser">Delete User</a>
+ </tr>
+ <tr>
+     <td>Account5</td>
+     <td>Password5</td>
+     <td> <center> 9</center></td>
+     <td>
+       <a href="/GuessTheVip/showUsers.html" type="DeleteUser">Delete User</a>
+</tr>
+<tr>
+    <td>Account6</td>
+    <td>Password6</td>
+    <td> <center> 13</center></td>
+    <td>
+      <a href="/GuessTheVip/showUsers.html" type="DeleteUser">Delete User</a>
+</tr>
+<tr>
+    <td>Account7</td>
+    <td>Password7</td>
+    <td> <center> 12</center></td>
+    <td>
+      <a href="/GuessTheVip/showUsers.html" type="DeleteUser">Delete User</a>
+</tr>
+<tr>
+    <td>Account8</td>
+    <td>Password8</td>
+    <td> <center> 21</center></td>
+    <td>
+      <a href="/GuessTheVip/showUsers.html" type="DeleteUser">Delete User</a>
+</tr>
+<tr>
+    <td>Account9</td>
+    <td>Password9</td>
+    <td> <center> 23</center></td>
+    <td>
+      <a href="/GuessTheVip/showUsers.html" type="DeleteUser">Delete User</a>
+</tr>
+<tr>
+    <td>Account10</td>
+    <td>Password10</td>
+    <td> <center> 24</center></td>
+    <td>
+      <a href="/GuessTheVip/showUsers.html" type="DeleteUser">Delete User</a>
+</tr>
+</table>
+</body>
+</html>
