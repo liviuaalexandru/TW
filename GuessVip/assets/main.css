@@ -1,0 +1,78 @@
+@import "buttons.css";
+
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background: #004d4d;
+}
+
+body.home {
+    background: url(images/bg-pattern.png), #7b4397;
+    background: url(images/bg-pattern.png), -webkit-linear-gradient(to left, #7b4397, #dc2430);
+    background: url(images/bg-pattern.png), linear-gradient(to left, #7b4397, #dc2430);
+    overflow-y: hidden;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container.container-cover {
+    margin-top: 20%;
+    margin-left: 20%;
+}
+
+.bg-warning {
+    background: #ffb84d;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+a:hover {
+    color: #ffb84d;
+}
+.text-center {
+    text-align: center;
+}
+
+.text-warning {
+    color: #ffb84d;
+}
+
+#popupbox {
+    padding: 10px;
+    height: 220px;
+    position: absolute;
+    top: 5%;
+    left:40%;
+    background: #f5f5f5;
+    visibility: hidden;
+    border-radius: 10px;
+}
+
+.text-welcome {
+    font-size: 34px;
+    color: #ffffff;
+}
+
+.text-info {
+    color: #ffffff;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.example {
+    display: flex;
+    transition: all .5s;
+    user-select: none;
+    background: linear-gradient(to bottom, white, black);
+}
