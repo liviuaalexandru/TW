@@ -1,3 +1,0 @@
-DROP TABLE  IF EXISTS usersTable;
-
-DROP TABLE IF EXISTS quizTable;

@@ -1,0 +1,89 @@
+
+.signInButton {
+    background-color: yellow;
+    border: none;
+    color: black;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 70px;
+    width: 15%;
+    position: absolute;
+    left: 7%;
+    top: 85%;
+}
+
+.button {
+    text-decoration: none;
+    background-color: #777777;
+    color: white;
+    padding: 10px 20px;
+    margin: inherit;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.button-primary {
+    background: #4CAF50;
+}
+
+.button-default {
+    background: #777777;
+}
+
+.button-warning {
+    background: #FFFF00;
+}
+
+.closeButton {
+    font: 14px/100% arial, sans-serif;
+    position: absolute;
+    top: 9px;
+    left: 85%;
+    border-color: #00001a;
+    background: #ff0000;
+    color: yellow;
+    border-radius: 3px;
+    padding: 3px 5px;
+    text-decoration: none;
+}
+
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+    float: none;
+    width: 10%;
+
+}
+
+.button-play {
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: red;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #004d4d;
+    position: absolute;
+    top: 15%;
+    left: 40%;
+}
+
+.button-play:hover {
+    background-color: orange
+}
