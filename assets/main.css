@@ -66,6 +66,17 @@ a:hover {
     visibility: hidden;
     border-radius: 10px;
 }
+
+#popupbox-quizzHelper{
+    padding: 90px;
+    height: 20px;
+    position: absolute;
+    top: 5%;
+    left:40%;
+    background: #f5f5f5;
+    visibility: hidden;
+    border-radius: 10px;
+}
 .text-welcome {
     font-size: 34px;
     color: #ffffff;
