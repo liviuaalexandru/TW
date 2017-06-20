@@ -38,6 +38,7 @@ function router( $uri = null ) {
 	}
 
 	return $router->direct( $uri );
+
 }
 
 /**

@@ -37,7 +37,7 @@ class AuthController {
 		$password  = $request->get( 'password' );
 		$password2 = $request->get( 'password2' );
 		if ( $password !== $password2 ) {
-			$message = 'Passwords don\'t match';
+			//password and password2 are not strong equal
 			back();
 			return;
 		}
@@ -45,9 +45,8 @@ class AuthController {
 		$model  = new User();
 		$result = $model->find( [ 'username' => $username ] )->first();
 		if ( $result ) {
-			// Add error message: ""
-			$message = 'User already exists';
-			back();
+			// user already exist
+            back();
 			return;
 		}
 
@@ -57,11 +56,10 @@ class AuthController {
 		$result = $model->create();
 
 		if ( ! $result ) {
-			$message = 'Account could not be created';
-
-			back();
+            //account could not be created
+		    back();
 		} else {
-			$message = 'You have registered';
+			//registered succesfull
 			redirect( '/' );
 		}
 	}

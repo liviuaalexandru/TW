@@ -23,26 +23,25 @@
         left: 41.5%;
     }
 
+    .closeButtonHelper {
+        font: 14px/100% arial, sans-serif;
+        position: absolute;
+        top: 9px;
+        left: 90%;
+        border-color: #00001a;
+        background: #4CAF50;
+        color: yellow;
+        border-radius: 3px;
+        padding: 3px 5px;
+        text-decoration: none;
+    }
+
     .btn-answer {
         width: 5%;
         height: 6%;
         border-radius: 5px;
         position: absolute;
         top: 63%;
-        left: 46%;
-        background-color: #00b300;
-        border-color: #00b300;
-        text-decoration-color: #bfbfbf;
-        text-emphasis-color: #bfbfbf;
-        text-align: center;
-    }
-
-    .btn-answerPopup{
-        width: 10%;
-        height: 7%;
-        border-radius: 5px;
-
-        top: 80%;
         left: 46%;
         background-color: #00b300;
         border-color: #00b300;
@@ -65,18 +64,11 @@
     <input type="text" name="answer" placeholder="Please enter your answer"><br>
     <button type="submit" class="button btn-answer">Send!</button>
 </form>
-<a href="javascript:quizzHelper('show');" class="button button-reset-password">Help</a>
-
+<a href="javascript:quizzHelper('show');" class="button">Help</a>
 <div id="popupbox-quizzHelper">
-    <form action="/game/answer" method="post" class="text-center">
-        <a href="javascript:quizzHelper('hide');" class="closeButton">X</a>
-        <input type="radio" name="answer" value="Brad Pitt">Brad Pitt<br>
-        <input type="radio" name="answer" value="Tom Cruise">Tom Cruise<br>
-        <input type="radio" name="answer" value="Marika Monroe">Marika Monroe<br>
-        <button type="submit" class="button btn-answerPopup">
-            Send!
-        </button>
-
-    </form>
+    <a href="javascript:quizzHelper('hide');" class="closeButtonHelper">X</a>
+    <?php
+        echo $quizz->helper;
+    ?>
 </div>
 <?php view( 'inc.footer' ) ?>

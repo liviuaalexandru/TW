@@ -8,6 +8,7 @@ class Quizz extends Model {
 		'id',
 		'image',
 		'answer',
+        'helper',
     ];
 
     /**

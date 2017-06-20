@@ -1,10 +1,9 @@
 <?php
-// DEPENDENCY INJECTION
-// Practic harta fiecarei dependente
-// Atunci cand este chemata clasa 'abstracta'(cheia) se apeleaza functia anonima si se rezolva clasa  stocata in containerul aplicatiei necesara/pe care vrem sa o returnam
+// Atunci cand este chemata clasa 'abstracta'(cheia) se apeleaza functia anonima
+// si se rezolva clasa  stocata in containerul aplicatiei necesara/pe care vrem sa o returnam
 $app = App::instance()->setRootPath( __DIR__ );
 
-$app->singleton('config', function($app) { //closure, callabla, functie anonima
+$app->singleton('config', function($app) { //closure, functie anonima
 	$config =  require $app->path('config.php');
 	return new Bag($config); // Returnez clasa corespunzatoare cheiei
 });
