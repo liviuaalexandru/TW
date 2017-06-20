@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Guess the VIP - Scholary Raport</title>
+    <link rel="stylesheet" href="http://scholarly.vernacular.io/scholarly.css">
+</head>
+<body prefix="schema: http://schema.org/ xsd: http://www.w3.org/2001/XMLSchema# sa: https://ns.science.ai/">
+<header>
+    <p class="title">Guess the VIP - Scholary Raport</p>
+</header>
+<article id="article1" typeof="schema:ScholarlyArticle" resource="#">
+    <h1>Guess the VIP</h1>
+
+    <section>
+        <ol>
+            <li property="schema:author" typeof="sa:ContributorRole">
+                <a property="schema:author" href="https://github.com/liviuaalexandru" typeof="schema:Person">
+                    <span property="schema:givenName">Liviu-Alexandru</span>
+                    <span property="schema:familyName">Burlacu</span>
+                </a>
+                <sup property="sa:roleContactPoint" typeof="schema:ContactPoint">
+                </sup>
+            </li>
+
+            <li property="schema:contributor" typeof="sa:ContributorRole">
+                <a property="schema:contributor" href="https://github.com/cicolaeneuciuc" typeof="schema:Person">
+                    <span property="schema:givenName">Nicolae</span>
+                    <span property="schema:familyName">Leuciuc</span>
+                </a>
+            </li>
+        </ol>
+        <!-- The affiliation list -->
+        <ol>
+            <a href="https://www.info.uaic.ro">
+                <span property="schema:name">Universitatea Alexandru Ioan Cuza, Facultatea de Informatica Iasi</span>
+            </a>
+        </ol>
+    </section>
+
+    <section typeof="sa:Abstract" id="abstract">
+        <h2>Cuprins</h2>
+        <p>1.Descriere</p>
+        <p>2.Tehnologii si limbaje utilizate</p>
+        <p>3.Diagrama baza de date + diagrama use case</p>
+        <p>4.Atributii</p>
+        <p>5.Retrospectiva</p>
+        <p>6.Bibliografie</p>
+    </section>
+
+    <section typeof="sa:MaterialsAndMethods">
+        <h2>1. Descriere</h2>
+        <aside typeof="schema:WPSideBar">
+			<p> Enuntul cerintei : Sa se dezvolte o aplicatie Web care permite utilizatorilor ghicirea numelor unor personalitati celebre cu ajutorul imaginilor (preluate local sau folosind un serviciu online precum Flickr ori Instagram), fie prin tastarea directa a numelor (gen Spanzuratoarea), fie prin apelarea la metode ajutatoare (i.e. variante de alegeri). Utilizatorii autentificati vor avea la dispozitie un istoric al punctajelor proprii obtinute pe baza sesiunilor de joc. Clasamentele vor putea fi facute publice in formate ca Atom, CSV, JSON si HTML.
+			</p>
+            <p> Aplicatia  Guess the VIP este un joc distractiv in care iti poti testa abilitatea de a recunoaste persoane celebre.
+			</p
+			<p> Avem o parte publica care poate fi accesata de oricine vrea sa se joace. Se poate loga oricine are cont si daca nu are, il poate face. Un user public are acces la un tabel cu top 10 scoruri si la highscore-ul personal.
+			</p>
+			<p> Partea de admin poate accesa baza de date a jucatorilor si a intrebarilor din joc. Adminul poate modifica poza de la o intrebare, cat si raspunsul sau o poate sterge complet. Este posibil sa si adauge intrebari. 
+			</p>
+        </aside>
+    </section>
+
+    <section typeof="sa:MaterialsAndMethods">
+        <h2>2. Tehnologii si limbaje utilizate</h2>
+        <aside typeof="schema:WPSideBar">
+            <p>In alcatuirea aplicatiei noastre am folosit urmatoarele tehnologii si limbaje de programare:</p>
+            <ol>
+                <li>
+                    HTML5 / CSS3 / PHP (PhpStorm)
+                </li>
+                
+               
+                <li>
+                    GitHub - repository
+                </li>
+            </ol>
+        </aside>
+    </section>
+
+    <section typeof="sa:MaterialsAndMethods">
+        <h2>3. Diagrame</h2>
+        <figure typeof="sa:Image">
+            <figcaption>Arhitectura bazei de date</figcaption>
+            <img class="imag" src="diagrama structura bd.png">
+        </figure>
+        <figure typeof="sa:Image">
+            <figcaption>Diagrama use case</figcaption>
+            <img class="imag" src="usecase.png">
+        </figure>
+    </section>
+
+    <section typeof="sa:MaterialsAndMethods">
+
+        <h2>4. Atributii</h2>
+        <figure typeof="sa:Table">
+            <table>
+                <thead>
+                <tr>
+                    <th>Nume</th>
+                    <th>Task</th>
+                </tr>
+                </thead>
+                <tr>
+                    <th>Burlacu Liviu</th>
+                    <th>Front end / Back End / Oracle DB / Coordonation </th>
+                </tr>
+                <tr>
+                    <th>Leuciuc Nicolae</th>
+                    <th>Front end / Back End / Oracle DB / Raport</th>
+                </tr>
+            </table>
+        </figure>
+    </section>
+
+    <section typeof="sa:MaterialsAndMethods">
+
+        <h2>5. Retrospectiva</h2>
+        <figure typeof="sa:Table">
+            <table>
+                <thead>
+                <tr>
+                    <th>Nume</th>
+                    <th>Likes</th>
+                    <th>Dislikes</th>
+                </tr>
+                </thead>
+                <tr>
+                    <th>Burlacu Liviu</th>
+                    <th>Teamwork.</th>
+                    <th>Comunicare proasta.</th>
+                </tr>
+                <tr>
+                    <th>Leuciuc Nicolae</th>
+                    <th>Am invatat limbaje noi de programare.</th>
+                    <th>Program aglomerat cu celelalte materii, timp putin.</th>
+                </tr>
+            </table>
+        </figure>
+    </section>
+
+    <section typeof="sa:ReferenceList">
+        <h2>6. Bibliografie</h2>
+        <ol>
+            <li typeof="schema:ScholarlyArticle" resource="https://gist.github.com/jakebellacera/635416">
+            <span property="schema:author" typeof="schema:Person">
+                <span property="schema:familyName">Bellacera</span>
+                <span property="schema:givenName">Jake</span>
+            </span>.
+                <cite property="schema:name">PHP to ICS.</cite>
+                <span property="schema:isPartOf" typeof="schema:PublicationVolume">
+                    <span property="schema:isPartOf" typeof="schema:Periodical">
+                        <span property="schema:name">GitHub.</span>
+                    </span>
+                </span>
+            </li>
+            <li typeof="schema:ScholarlyArticle" resource="https://stackoverflow.com/questions/44499177/json-ajax-problems?noredirect=1#comment75992269_44499177">
+            <span property="schema:author" typeof="schema:Person">
+                <span property="schema:familyName">Saini</span>
+                <span property="schema:givenName">R</span>.
+                <span property="schema:givenName">K</span>. ,
+                <span property="schema:familyName">shubham</span>
+                <span property="schema:givenName">715</span>. ,
+                <span property="schema:familyName">White</span>
+                <span property="schema:givenName">Hat</span>
+            </span>.
+                <cite property="schema:name">Intrebari in legatura cu JSON si $ajax.</cite>
+                <span property="schema:isPartOf" typeof="schema:PublicationVolume">
+                    <span property="schema:isPartOf" typeof="schema:Periodical">
+                        <span property="schema:name">StackOverflow.</span>
+                    </span>
+                </span>
+            </li>
+            <li typeof="schema:ScholarlyArticle" resource="https://pixabay.com/">
+                <cite property="schema:name">Imagini cu drept de reutilizare.</cite>
+                <span property="schema:isPartOf" typeof="schema:PublicationVolume">
+                    <span property="schema:isPartOf" typeof="schema:Periodical">
+                        <span property="schema:name">PixAbay.</span>
+                    </span>
+                </span>
+            </li>
+            <li typeof="schema:ScholarlyArticle" resource="https://www.google.ro/search?q=google+images&hl=ro&site=webhp&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjG5P2_gLnUAhVEVhQKHYLaCsAQ_AUIBigB&biw=1920&bih=947#q=google+images&hl=ro&tbm=isch&tbs=sur:fc">
+                <cite property="schema:name">Imagini cu drept de reutilizare.</cite>
+                <span property="schema:isPartOf" typeof="schema:PublicationVolume">
+                    <span property="schema:isPartOf" typeof="schema:Periodical">
+                        <span property="schema:name">Google images.</span>
+                    </span>
+                </span>
+            </li>
+        </ol>
+    </section>
+</article>
+</body>
